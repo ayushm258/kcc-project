@@ -36,6 +36,10 @@ router.get('/:da', function(req, res, next) {
   });
 
 
+  router.get('/', function(req, res, next) {
+    console.log(req.params.da)
+    // res.json({name:req.params.da})
+    res.render('teacher', { title: req.params.da});
+  });
 
-
-module.exports = router;
+module.exports = router
