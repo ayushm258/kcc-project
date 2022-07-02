@@ -20,7 +20,7 @@ router.get('/:da-:ta-:ch', function(req, res, next) {
     console.log(req.params )
     // res.json({name:req.params.da+","+req.params.ch +" and "+req.params.ta+" are bother and sister"})
     res.render('teacher', { title: req.params.da,name1:req.params.ta,verb:req.params.ch});
-
+ 
   });
 
 router.get('/:da-:ta', function(req, res, next) {
